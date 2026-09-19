@@ -89,3 +89,59 @@ Compare country profiles
 Only the 2016 observations are included, so the results describe differences between countries at one point in time rather than changes in freedom over time.
 
 PCA and clustering are descriptive techniques and should not be interpreted as evidence of causal relationships between the different dimensions of freedom.
+
+
+Repository Structure
+.
+├── data/
+│   └── README.md
+│
+├── report/
+│   └── human_freedom_pca_clustering.pdf
+│
+├── src/
+│   └── hfi_pca_clustering.R
+│
+├── README.md
+└── LICENSE
+
+
+Technologies
+R
+FactoMineR
+factoextra
+tidyverse
+ggplot2
+Principal Component Analysis
+Hierarchical Clustering
+Exploratory Data Analysis
+Data Visualization
+Reproducibility
+
+The analysis script is available in:
+
+src/hfi_pca_clustering.R
+
+To reproduce the analysis, place the Human Freedom Index dataset in the data/ directory and run the R script.
+
+Required packages include:
+
+install.packages(c(
+  "FactoMineR",
+  "factoextra",
+  "tidyverse",
+  "tibble",
+  "gridExtra",
+  "ggplot2"
+))
+Limitations
+
+The analysis is exploratory and cross-sectional.
+
+Only the 2016 observations are included, so the results describe differences between countries at one point in time rather than changes in freedom over time.
+
+PCA and clustering are descriptive techniques and should not be interpreted as evidence of causal relationships between the different dimensions of freedom.
+
+Academic Context
+
+Developed as part of the MSc Computational Social Science programme at Linköping University.
